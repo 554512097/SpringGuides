@@ -1,0 +1,61 @@
+:jdk: http://www.oracle.com/technetwork/java/javase/downloads/index.html
+:vscode_java_pack: https://code.visualstudio.com/docs/languages/java#_install-visual-studio-code-for-java
+:vscode_java_ext_pack: https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack
+:vscode_spring_ext_pack: https://marketplace.visualstudio.com/items?itemName=Pivotal.vscode-boot-dev-pack
+:images: https://raw.githubusercontent.com/spring-guides/gs-guides-with-vscode/main/images
+:toc:
+:icons: font
+:source-highlighter: prettify
+:project_id: gs-vscode
+
+This guide walks you through using VS Code to build one of the Getting Started guides.
+
+== What you'll build
+
+You’ll pick a Spring guide and import it into VS Code. Then you can read the guide, work on the code, and run the project.
+
+== What you'll need
+
+ * About 15 minutes
+ * VS Code with Java support
+ - If you don’t have VS Code installed yet: {vscode_java_pack}[Coding Pack for Java]
+ - If you have VS Code installed already: {vscode_java_ext_pack}[Java Extension Pack]
+ * {vscode_spring_ext_pack}[Spring Boot Extension Pack] for VS Code
+ * {jdk}[JDK 11] or later
+
+== Installing VS Code with Java and Spring support
+Choose and visit above links, and follow instructions to install. When you’re done, go ahead and launch VS Code.
+
+== Cloning a guide project
+
+To work with an existing project you need some code, so clone or copy one of the Getting Started guides, e.g. the REST Service guide:
+
+====
+[source,text]
+----
+git clone https://github.com/spring-guides/gs-rest-service.git
+----
+====
+
+Under the root folder of cloned or copied project, there are `initial` and `complete` folders. The `initial` folder contains initial code set, an empty project, making it possible for you to copy-and-paste your way through a guide. The `complete` folder contains complete code set where all the code from the guide already entered.
+
+== Starting a guide project from initial code set
+To start a guide project from initial code set, open the `initial` folder within VS Code. In first open, accept to import the project.
+
+image::{images}/open_folder.png[Open a specific folder in VS Code]
+
+== Opening the complete version of a guide project 
+
+To open the complete version of a guide project, open the `complete` folder within VS Code. In first open, accept to import the project.
+
+== Running a guide
+
+To run, open the source file where main method is defined and click `Run` on editor window.
+
+image::{images}/run_guide.png[Press run on the main java app]
+
+== Summary
+
+Congratulations! You have setup VS Code, imported the guide to build a RESTful web service, and ran it.
+
+include::https://raw.githubusercontent.com/spring-guides/getting-started-macros/main/footer.adoc[]

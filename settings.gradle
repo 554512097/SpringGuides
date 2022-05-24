@@ -1,0 +1,7 @@
+def projectRoot = rootProject.projectDir
+def includeDirs = [
+]
+includeDirs.each {
+    include(":$it")
+    project(":$it").projectDir = new File(projectRoot, "$it/complete")
+}
